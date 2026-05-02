@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Agent Skills Studio"
+version = "1.0.0"
+id = "artifacts/agent-skills-studio"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20538
+
+[services.development]
+run = "pnpm --filter @workspace/agent-skills-studio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/agent-skills-studio", "run", "build" ]
+publicDir = "artifacts/agent-skills-studio/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20538"
+BASE_PATH = "/"

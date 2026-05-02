@@ -1,0 +1,96 @@
+Build a fully responsive web app called Agent Skills Studio.
+
+Purpose:
+This app is both a learning tool and a practical sandbox for agent skills. It should help users understand how a base agent changes when different specialist skills are attached, and how skills differ from tools.
+
+Design:
+Use a minimalist UI with a clean, modern, calm feel.
+Light mode is the default.
+Include a theme toggle for light and dark mode.
+Use spacious layout, subtle borders, soft shadows, clear typography, and a neutral color palette.
+Avoid clutter, bright gradients, and decorative noise.
+
+Core behavior:
+The default experience should use mocked outputs so users can understand the product instantly.
+Optional live LLM mode can be included as a secondary advanced mode, but the app must work fully without it.
+
+The app should clearly show:
+1. the base agent,
+2. the loaded skills,
+3. the user task,
+4. the output with and without skills,
+5. a trace showing which skill influenced the result.
+
+Main screens:
+1. Home screen
+- Short hero section explaining agent skills in simple language.
+- Preset cards users can launch instantly.
+- A short “How it works” section showing: choose base agent -> attach skills -> run task -> compare outputs.
+- Clear CTA to start with a preset or open a blank studio.
+
+2. Studio screen
+- Left panel: preset selector, skill library, mode toggle (mocked vs optional live), and settings.
+- Center panel: task input, base agent view, selected skills, and comparison runner.
+- Right panel: output comparison, skill influence trace, and explanation of what happened.
+- Desktop uses a clean 3-panel layout.
+- Tablet compresses neatly.
+- Mobile stacks sections vertically with sticky top actions.
+
+Required features:
+- Fully responsive
+- Minimalist UI
+- Theme toggle, with light mode as default
+- Undo button
+- Redo button
+- Reset to home screen button
+- No authentication
+- Use localStorage for persistence
+- Mocked output as the default experience
+- Optional live LLM as a secondary advanced mode
+- Presets available immediately on first load
+- Smooth but minimal interactions
+
+Preset demos:
+Include at least 4 clickable presets:
+1. Data Analyst Skill
+2. Legal Review Skill
+3. Support Copilot Skill
+4. Research Synthesizer Skill
+
+For each preset:
+- Preload a clear user task
+- Preload a base agent description
+- Preload one or more specialist skills
+- Preload mocked output without skills
+- Preload mocked output with skills
+- Preload a skill influence trace
+- Include 3 to 5 example actions or quick prompts users can click
+
+Learning features:
+- Explain the difference between skills and tools
+- Show why a skill changed the output
+- Include inline labels for base agent, skill, task, output, and influence trace
+- Add an “Explain this result” action for beginners
+- Let users compare with-skill vs without-skill results side by side
+
+Optional live mode:
+- Add an optional advanced mode for live LLM behavior only if it can be cleanly isolated
+- Keep mocked mode as the default and most polished experience
+- Make it visually obvious when the app is in simulated mode vs live mode
+
+State and persistence:
+- Save theme preference, current session, recent tasks, notes, selected preset, mode choice, and studio state in localStorage
+- Undo and redo should work for major actions like changing presets, editing the task, toggling skills, replaying runs, changing settings, and clearing the session
+- Reset to home screen should return the app to the initial landing state without removing built-in presets
+
+Accessibility:
+- Keyboard accessible
+- High contrast in both themes
+- Visible focus states
+- Large tap targets on mobile
+
+Tone:
+Use concise, beginner-friendly language.
+Make the app feel educational, practical, and calm.
+
+Build this as a polished single-page web app with clean information architecture and production-quality responsiveness.
