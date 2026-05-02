@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { useTheme } from "@/components/theme-provider";
+import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, ArrowLeft, RotateCcw, Redo, Undo } from "lucide-react";
 import { useStudioStore } from "@/hooks/use-studio-store";
