@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Bot, Play, Info, CheckCircle2, ChevronRight, Wand2, Lightbulb, Beaker } from "lucide-react";
+import { Bot, Play, Info, CheckCircle2, ChevronRight, Wand2, Lightbulb, Beaker, BrainCircuit, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Studio() {
