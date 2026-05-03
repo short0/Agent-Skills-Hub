@@ -22,7 +22,7 @@ function Router() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="agent-skills-studio-theme">
+    <ThemeProvider attribute="class" defaultTheme="light" storageKey="agent-skills-studio-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <WouterRouter base={import.meta.env.BASE_URL?.replace(/\/$/, "") || ""}>
